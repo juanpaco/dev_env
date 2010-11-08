@@ -38,11 +38,6 @@ nnoremap ; :
 vmap Q gq
 nmap Q gqap
 
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-
 nnoremap j gj
 nnoremap k gk
 
