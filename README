@@ -1,7 +1,6 @@
 Tired of scping vim files around, so here it is.
 
 Currently:
- 1) vim-autoclose (git clone git://github.com/Townk/vim-autoclose)
  2) pathogen.vim (http://www.vim.org/scripts/script.php?script_id=2332)
  3) fugitive (http://www.vim.org/scripts/script.php?script_id=2975)
 
