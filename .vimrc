@@ -49,3 +49,5 @@ map <C-l> <C-w>l
 
 set softtabstop=2  " Thank you http://www.jwz.org/doc/tabs-vs-spaces.html.  Insert 2 spaces when TAB is pressed.
 set expandtab
+
+colorscheme darkblue
