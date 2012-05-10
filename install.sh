@@ -7,4 +7,5 @@ cp -R .vim ~/.vim
 cp -R .tmux ~/.tmux
 cp .tmux.conf ~/.tmux.conf
 cp t.sh ~/t.sh
+cp tm ~/tm
 
