@@ -9,7 +9,7 @@ set statusline=%F\ %m\ %{fugitive#statusline()}\ %y%=%l,%c\ %P
 
 " Much of this taken from http://nvie.com/posts/how-i-boosted-my-vim/.  THANK YOU!
 set nowrap        " don't wrap lines
-set tabstop=2     " a tab is four spaces
+set tabstop=2     " a tab is 2 spaces
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
