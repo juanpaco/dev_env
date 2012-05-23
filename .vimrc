@@ -51,3 +51,6 @@ set softtabstop=2  " Thank you http://www.jwz.org/doc/tabs-vs-spaces.html.  Inse
 set expandtab
 
 colorscheme darkblue
+
+
+set foldmethod=syntax " Enable code folding
