@@ -47,6 +47,12 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Resizing the panes
+map <C-u> :res +1<CR>
+map <C-i> :res -1<CR>
+map <C-y> :vertical res -1<CR>
+map <C-o> :vertical res +1<CR>
+
 set softtabstop=2  " Thank you http://www.jwz.org/doc/tabs-vs-spaces.html.  Insert 2 spaces when TAB is pressed.
 set expandtab
 
