@@ -56,7 +56,7 @@ map <C-o> :vertical res +1<CR>
 set softtabstop=2  " Thank you http://www.jwz.org/doc/tabs-vs-spaces.html.  Insert 2 spaces when TAB is pressed.
 set expandtab
 
-colorscheme darkblue
+colorscheme bigoh
 
 
 set foldmethod=syntax " Enable code folding
