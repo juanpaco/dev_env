@@ -60,4 +60,4 @@ colorscheme bigoh
 
 
 set foldmethod=syntax " Enable code folding
-set foldlevelstart=2
+set foldlevelstart=10
