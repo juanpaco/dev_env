@@ -61,3 +61,5 @@ colorscheme bigoh
 
 set foldmethod=syntax " Enable code folding
 set foldlevelstart=10
+
+au VimEnter *  NERDTree " Open NERDTree by default
