@@ -27,6 +27,9 @@ echo "export VISUAL=vim" >> $HOME/.bashrc
 echo "export EDITOR=\"$VISUAL\"" >> $HOME/.bashrc
 ######## END .bashrc
 
+######## GIT CONFIG
 git config --global color.diff auto
 git config --global color.status auto
 git config --global color.branch auto
+git config --global push.default simple
+######## END GIT CONFIG
