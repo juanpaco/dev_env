@@ -16,6 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'sbdchd/neoformat'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -99,10 +100,17 @@ map <C-o> :vertical res +1<CR>
 set softtabstop=2  " Thank you http://www.jwz.org/doc/tabs-vs-spaces.html.  Insert 2 spaces when TAB is pressed.
 set expandtab
 
-colorscheme bigoh
+colorscheme distinguished
+
+set colorcolumn=80
 
 
 set foldmethod=syntax " Enable code folding
 set foldlevelstart=10
 
 au VimEnter *  NERDTree " Open NERDTree by default
+
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
