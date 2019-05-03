@@ -25,6 +25,8 @@ EOF
 echo $VAR >> $HOME/.bashrc
 echo "export VISUAL=vim" >> $HOME/.bashrc
 echo "export EDITOR=\"$VISUAL\"" >> $HOME/.bashrc
+# Let tmux use all teh colors
+echo "export TEMR=\"xterm-256color\"" >> $HOME/.profile
 ######## END .bashrc
 
 ######## GIT CONFIG
