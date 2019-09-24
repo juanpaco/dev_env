@@ -25,6 +25,7 @@ PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 EOF
 
 echo $VAR >> $HOME/.bashrc
+echo "alias vim=\"nvim\"" >> $HOME/.bashrc
 echo "export VISUAL=nvim" >> $HOME/.bashrc
 echo "export EDITOR=\"$VISUAL\"" >> $HOME/.bashrc
 # Let tmux use all teh colors
