@@ -1,3 +1,5 @@
+vim.cmd.colorscheme("nano-theme")
+
 vim.opt.number = true
 
 vim.opt.wrap = false
@@ -14,6 +16,7 @@ vim.opt.copyindent = true -- Even though Tree-sitter does it better, set this in
 
 vim.opt.visualbell = true
 vim.opt.errorbells = false
+
 vim.opt.backup = false
 vim.opt.swapfile = false
 
