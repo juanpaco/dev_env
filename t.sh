@@ -1,6 +1,6 @@
 #!/bin/bash
 sn=devenv
-codez_root=/home/dev/source/
+codez_root=~/source/
 
 cd "$codez_root"
 set -- $(stty size) # $1 = rows $2 = columns
