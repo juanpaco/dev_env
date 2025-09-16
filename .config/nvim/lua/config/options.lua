@@ -38,3 +38,21 @@ vim.opt.wildignore = {
   "*.jpg", "*.png", "*.gif",            -- Images
   ".DS_Store", "Thumbs.db",             -- OS files
 }
+
+-- Strip trailing whitespace and fix newlines on save
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*",
+  callback = function()
+    local save_cursor = vim.fn.getpos(".")
+    -- Strip trailing whitespace
+    vim.cmd([[%s/\s\+$//e]])
+    -- Reduce 3+ consecutive newlines to 2 newlines (one blank line)
+    vim.cmd([[%s/\n\n\n\+/\r\r/e]])
+    -- Remove all trailing newlines and add exactly one
+    vim.cmd([[%s/\n\+\%$//e]])
+    vim.cmd([[s/\%$//e]])
+    vim.cmd([[normal! Go]])
+    vim.fn.setpos(".", save_cursor)
+  end,
+})
+

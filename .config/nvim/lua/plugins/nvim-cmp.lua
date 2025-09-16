@@ -3,10 +3,7 @@ return {
   event = "InsertEnter",
   dependencies = {
     -- LSP completion source (try alternative)
-    {
-      "hrsh7th/cmp-nvim-lsp",
-      commit = "39e2eda76828d88b773cc27a3f61d2ad851b2c24", -- Pin to a stable commit
-    },
+    "hrsh7th/cmp-nvim-lsp",
 
     -- Buffer completion source
     "hrsh7th/cmp-buffer",
