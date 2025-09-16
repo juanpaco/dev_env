@@ -2,6 +2,9 @@ return {
   "stevearc/oil.nvim",
   opts = {
     default_file_explorer = true,
+    view_options = {
+      show_hidden = true,  -- Show dot files by default
+    },
   },
   dependencies = { "nvim-tree/nvim-web-devicons" },
   keys = {
