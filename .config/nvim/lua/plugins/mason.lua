@@ -8,6 +8,9 @@ return {
           package_pending = "➜",
           package_uninstalled = "✗"
         }
+      },
+      ensure_installed = {
+        "jdtls",
       }
     })
   end,
