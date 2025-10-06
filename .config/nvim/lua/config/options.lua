@@ -56,3 +56,11 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   end,
 })
 
+-- Remove dot from Ruby indentkeys to prevent unwanted deindentation when typing method calls
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "ruby" },
+  callback = function()
+    vim.opt_local.indentkeys:remove(".")
+  end,
+})
+
