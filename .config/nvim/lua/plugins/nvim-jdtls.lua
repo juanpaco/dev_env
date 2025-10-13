@@ -27,7 +27,9 @@ return {
 
     -- Configuration
     local config_dir = jdtls_path .. "/config_mac"
-    if vim.fn.has("linux") == 1 then
+    if vim.fn.has("mac") == 1 and vim.fn.system("uname -m"):match("arm64") then
+      config_dir = jdtls_path .. "/config_mac_arm"
+    elseif vim.fn.has("linux") == 1 then
       config_dir = jdtls_path .. "/config_linux"
     elseif vim.fn.has("win32") == 1 then
       config_dir = jdtls_path .. "/config_win"
